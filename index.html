@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
+
 </head>
 <body>
     <div id="app">
+        <div>
+            {{ getRandomNumber() }}
+            <p v-html="htmlcontent"></p>
+        </div>
         <div>
             <label for="goal">Goal</label>
             <input type="text" id="goal" v-model="enteredValue"/>
@@ -17,6 +22,8 @@
         <ul>
             <li v-for="goal in goals">{{goal}}</li>
         </ul>
+        <a href="{{homePageLnk}}">Interpolation</a><br/><br/>
+        <a v-bind:href="homePageLnk">Vue Binidng</a>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
