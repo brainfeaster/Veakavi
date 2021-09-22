@@ -4,7 +4,8 @@ Vue.createApp({
             goals: [],
             enteredValue: '',
             homePageLnk: 'https://sanjaipk.github.io',
-            htmlcontent: '<b>hello bolding</b>'
+            htmlcontent: '<b>hello bolding</b>',
+            counter:0
         };
     },
     methods: {
